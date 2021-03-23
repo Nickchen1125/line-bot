@@ -16,7 +16,7 @@ line_bot_api = LineBotApi('p7ZAjIyyIZ5Ou7w5ViLmmWOASbr0RJPklLo3Q1Zv+lBa3FXZXcofH
 handler = WebhookHandler('5ea6f7ab6a91ab8445b3d2bb1117d091')
 
 
-@app.route("/callback", methods=['POST'])
+@app.route("https://git.heroku.com/line-bot-209410595.git/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
